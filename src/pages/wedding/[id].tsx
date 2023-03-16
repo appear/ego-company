@@ -38,7 +38,7 @@ function WeddingPage({
     state: { wedding },
   } = useWeddingContext()
 
-  useLoadKaKao()
+  // useLoadKaKao()
 
   const { theme } = wedding
 

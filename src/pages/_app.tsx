@@ -108,11 +108,13 @@ Page.getInitialProps = async ({
     : Promise.resolve({}))
 
   try {
-    const wedding = await (req
-      ? !isDev
-        ? fetchWedding(id as string)
-        : Promise.resolve(mockWedding as Wedding)
-      : Promise.resolve({}))
+    // const wedding = await (req
+    //   ? !isDev
+    //     ? fetchWedding(id as string)
+    //     : Promise.resolve(mockWedding as Wedding)
+    //   : Promise.resolve({}))
+
+    const wedding = mockWedding
 
     return {
       pageProps,

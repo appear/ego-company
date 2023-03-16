@@ -17,21 +17,21 @@ function Map({
 }) {
   const { pathLink, lat, lng } = location
 
-  useEffect(() => {
-    const container = document.getElementById('map')
-    const position = new window.kakao.maps.LatLng(lat, lng)
-    const options = {
-      center: position,
-      level: 3,
-    }
-    const marker = new window.kakao.maps.Marker({
-      position,
-    })
+  // useEffect(() => {
+  //   const container = document.getElementById('map')
+  //   const position = new window.kakao.maps.LatLng(lat, lng)
+  //   const options = {
+  //     center: position,
+  //     level: 3,
+  //   }
+  //   const marker = new window.kakao.maps.Marker({
+  //     position,
+  //   })
 
-    const map = new window.kakao.maps.Map(container, options)
+  //   const map = new window.kakao.maps.Map(container, options)
 
-    marker.setMap(map)
-  }, [lat, lng])
+  //   marker.setMap(map)
+  // }, [lat, lng])
 
   const handleClickDimed = () => {
     window.open(pathLink)
